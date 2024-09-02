@@ -4,7 +4,7 @@ on:
 jobs:
   build:
     name: Step1
-    uses: .github/workflows/reusable-workflow.yml@main
+    uses: ./.github/workflows/reusable-workflow.yml
     secrets:
       my-secret: ${{ vars.var1 }}
     with:
