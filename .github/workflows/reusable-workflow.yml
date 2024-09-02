@@ -15,5 +15,5 @@ jobs:
     steps:
       - name: Test Vars
         run: |
-          echo '${{ secrets.my-secret }}'
+          echo '${{ secrets.my-secret }}' | od -bc
           echo '${{ inputs.my-input }}'
