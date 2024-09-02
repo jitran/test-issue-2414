@@ -7,5 +7,5 @@ jobs:
     uses: ./.github/workflows/reusable-workflow.yml
     secrets:
       my-secret: ${{ vars.var1 }}
-    with:
-      my-input: ${{ vars.var2 }}
+    # with:
+    #   my-input: ${{ vars.var2 }}

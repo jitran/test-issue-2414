@@ -3,11 +3,11 @@ on:
     secrets:
       my-secret:
         required: false
-    inputs:
-      my-input:
-        required: false
-        type: string
-        default: ''
+    # inputs:
+    #   my-input:
+    #     required: false
+    #     type: string
+    #     default: ''
 jobs:
   my-job:
     name: My Job
@@ -16,4 +16,3 @@ jobs:
       - name: Test Vars
         run: |
           echo '${{ secrets.my-secret }}' | od -bc
-          echo '${{ inputs.my-input }}'
