@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    name: Step1
+    uses: .github/workflows/reusable-workflow.yml@main
+    secrets:
+      my-secret: ${{ vars.var1 }}
+    with:
+      my-input: ${{ vars.var2 }}
